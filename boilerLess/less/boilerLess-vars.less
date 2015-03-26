@@ -1,0 +1,250 @@
+//out: null
+
+/*
+ *  boiler{LESS} - v0.5.0
+ *  "simple {LESS} boilerplate based on HTML5 Boilerplate"
+ *  https://github.com/Gix075/boilerLess
+ */
+
+ 
+// ============================================================================
+// VARIABLES
+// ============================================================================
+ 
+// body //
+// ********************** //
+@body-margin: 40px;
+@body-padding: 40px;
+ 
+// margins and padding //
+// ********************** //
+@margin: 40px;
+@padding: 40px;
+ 
+// hr //
+// ********************** //
+@hr-height: 1px;
+@hr-border: 1px solid @gray-light;
+@hr-padding: 0;
+@hr-margin: @margin/2 0;
+ 
+// Text Selection //
+// ********************** //
+@text-selection-color: @gray-light;
+@text-selection-shadow: none;
+ 
+ 
+ 
+// ############################################### //
+// Typography //
+// ############################################### //
+ 
+// Common Text //
+// ********************** //
+@font-family-base: 'Arial',sans-serif;
+@font-size-base: 16px;
+@font-size-small-base: 0.8em;
+@font-weight-base: 400;
+@font-color-base: @gray-dark;
+@line-height-base: 1em;
+ 
+// Font Families //
+// ********************** //
+@font-1: 'Arial';
+@font-2: 'Georgia';
+ 
+// Common Links //
+// ********************** //
+@link-color: @gray-middle;
+@link-decoration: none;
+@link-hover-color: @gray-light;
+@link-hover-decoration: underline;
+@link-active-color: @gray-light;
+@link-active-decoration: none;
+@link-visited-color: @gray-light;
+@link-visited-decoration: none;
+@link-focus-color: @gray-light;
+@link-focus-outline: thin dotted transparent;
+ 
+// Standard Titles //
+// ********************** //
+@H-small: 0.8em;
+@H-small-color: @gray-middle;
+@H-color: inherit;
+@H-margin: 0 0 0.5em 0;
+@H-padding: 0;
+@H-weight: 700;
+@H-line-height: 1em;
+@H-font-family: @font-1;
+ 
+@H1-size: 2.2em;
+@H2-size: 2em;
+@H3-size: 1.8em;
+@H4-size: 1.5em;
+@H5-size: 1.3em;
+@H6-size: 1.2em;
+ 
+// Standard Paragraphs //
+// ********************** //
+@p-padding: 0;
+@p-margin: 0 0 1em 0;
+@p-small: @font-size-small-base;
+ 
+// Font Weights //
+// ********************** //
+@font-weight-light: 300;
+@font-weight-normal: 400;
+@font-weight-medium: 500;
+@font-weight-bold: 700;
+@font-weight-heavy: 900;
+ 
+// Font Sizes //
+// ********************** //
+@font-size-xsmall: 0.5em;
+@font-size-small: 0.8em;
+@font-size-medium: 1.2em;
+@font-size-large: 1.5em;
+@font-size-xlarge: 1.8em;
+ 
+// Form Inputs //
+// ********************** //
+@inp-color: inherit;
+@inp-border: 1px solid @gray-light;
+@inp-radius: 6px;
+@inp-padding: @padding/8;
+@inp-margin: 0 0 @margin/8 0;
+ 
+@label-color: inherit;
+@label-weight: @font-weight-bold;
+@label-padding: @padding/8;
+@label-margin: 0;
+ 
+// Form Placeholders //
+// ********************** //
+@placeholder-color: @gray-light;
+@placeholder-size: 1em;
+@placeholder-weight: @font-weight-light;
+ 
+// ############################################### //
+// Colors //
+// ############################################### //
+@gray-light: #ccc;
+@gray-middle: #555;
+@gray-dark: #333;
+ 
+@white: #fff;
+@black: #050505;
+ 
+//
+//Add HERE all other colors you need
+@color-1: #086ed3;
+@color-2: #ef9609;
+@color-3: #2d9124;
+//
+ 
+// ============================================================================
+// MIXINS
+// ============================================================================
+ 
+// ResetList //
+// ********************** //
+.resetlist {
+    list-style-type: none;
+    padding: 0;
+}
+ 
+// Transitions //
+// ********************** //
+// using .transition( ~"background, color", 0.2s );
+// .transition ( @property, @duration, @style: ease-in-out )
+.transition ( @property, @duration, @style) {
+    
+    -webkit-transition-property: @property;  
+    -webkit-transition-duration: @duration;
+    -webkit-transition-timing-function: @style;
+ 
+            transition-property: @property;  
+            transition-duration: @duration;
+            transition-timing-function: @style;
+}
+ 
+// Transforms //
+// ********************** //
+// using .transform( ~"transformProperties" );
+.transform ( @transformProperties ) {
+    -webkit-transform: @transformProperties;
+            transform: @transformProperties;
+}
+ 
+// Transforms > Translate //
+// ********************** //
+// using .translate( ~Xvalue, Yvalue );
+.translate ( @x, @y ) {
+    -webkit-transform: translate(@x,@y);
+            transform: translate(@x,@y);
+}
+ 
+.translate-50Y {
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+}
+ 
+.translate-50X {
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+}
+ 
+.translate-50 {
+    -webkit-transform: translate(-50%,-50%);
+            transform: translate(-50%,-50%);
+}
+ 
+// Ellipsis //
+// ********************** //
+.ellipsis {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+ 
+// Placeholder //
+// ********************** //
+.placeholder(@color,@size,@weight) {
+    ::-webkit-input-placeholder {color:@arguments; font-size: @size; font-weight: @weight;}
+    ::-moz-placeholder {color:@arguments; font-size: @size; font-weight: @weight;}
+    :-ms-input-placeholder {color:@arguments; font-size: @size; font-weight: @weight;}
+}
+ 
+// Position //
+// ********************** //
+.place(@top,@right,@bottom,@left) {
+    top:@top;
+    right: @right;
+    bottom: @bottom;
+    left: @left;
+}
+
+// Size
+// ********************** //
+.size(@width, @height) {
+    width: @width;
+    height: @height;
+}
+
+// Border //
+// ********************** //
+.border(@size, @style, @col) {
+    border-width: @size;
+    border-style: @style;
+    border-color: @col;
+}
+
+ 
+// BoxSizing //
+// ********************** //
+// using .boxsizing(~'border-box');
+.boxsizing(@property) {
+  -webkit-box-sizing: @property;
+     -moz-box-sizing: @property;
+          box-sizing: @property;
+}

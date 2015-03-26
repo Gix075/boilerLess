@@ -1,0 +1,268 @@
+//out: ../css/boilerLess-globals.css
+
+/*
+ *  boiler{LESS} - v0.5.0
+ *  "simple {LESS} boilerplate based on HTML5 Boilerplate"
+ *  https://github.com/Gix075/boilerLess
+ */
+
+
+/* ================================================================================= */
+/* GLOBAL STYLE */
+/* !!! You need to include normalize.css before this file! !!! */
+/* ================================================================================= */
+
+@import "boilerLess-vars.less";
+
+html,
+button,
+input,
+select,
+textarea {
+    color: @font-color-base;
+}
+ 
+html, body {
+    color: @font-color-base;
+    font-weight: @font-weight-base;
+    font-size: @font-size-base;
+    font-family: @font-family-base;
+    line-height: @line-height-base;
+}
+ 
+body {
+    margin: @body-margin;
+    padding: @body-padding;
+}
+ 
+/* Box-Sizing */
+/* **************************************** */
+* {
+    .boxsizing(~'border-box');
+}
+ 
+/* Elements */
+/* **************************************** */
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+ 
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+ 
+textarea {
+    resize: vertical;
+}
+ 
+/* Selection */
+/* **************************************** */
+::-moz-selection {
+    background: @text-selection-color;
+    text-shadow: @text-selection-shadow;
+}
+ 
+::selection {
+    background: @text-selection-color;
+    text-shadow: @text-selection-shadow;
+}
+ 
+/* HR */
+/* **************************************** */
+hr {
+    display: block;
+    height: @hr-height;
+    border: 0;
+    border-top: @hr-border;
+    margin: @hr-margin;
+    padding: @hr-padding;
+}
+ 
+/* Standard Links */
+/* **************************************** */
+ 
+a:link {
+    color: @link-color;
+    text-decoration: @link-decoration;
+    .transition( ~"color", 0.2s, ease );
+}
+ 
+a:visited {
+    color: @link-visited-color;
+    text-decoration: @link-visited-decoration;
+}
+ 
+a:hover {
+    color: @link-hover-color;
+    text-decoration: @link-hover-decoration;
+}
+ 
+a:active {
+    color: @link-active-color;
+    text-decoration: @link-active-decoration;
+}
+ 
+a:focus { 
+    outline: @link-focus-outline; 
+    color: @link-focus-color; 
+}
+ 
+/* Titles */
+/* **************************************** */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: @H-margin;
+    padding: @H-padding;
+    line-height: @H-line-height;
+    color: @H-color;
+    font-weight: @H-weight;
+    font-family: @H-font-family;
+}
+ 
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+    font-size: @H-small;
+    color: @H-small-color;
+}
+ 
+h1 {
+    font-size: @H1-size;
+}
+ 
+h2 {
+    font-size: @H2-size;
+}
+ 
+h3 {
+    font-size: @H3-size;
+}
+ 
+h4 {
+    font-size: @H4-size;
+}
+ 
+h5 {
+    font-size: @H5-size;
+}
+ 
+h6 {
+    font-size: @H6-size;
+}
+ 
+/* Standard Paragraphs */
+/* **************************************** */
+p {
+    margin: @p-margin;
+    padding: @p-padding;
+}
+ 
+p small {
+    font-size: @p-small;
+}
+ 
+/* Text Tags and Font Classes */
+/* **************************************** */
+ 
+// --> sizes
+small {
+    font-size: @font-size-small-base;
+}
+ 
+.font-xsmall {
+    font-size: @font-size-xsmall;
+}
+ 
+.font-small {
+    font-size: @font-size-small;
+}
+ 
+.font-medium {
+    font-size: @font-size-medium;
+}
+ 
+.font-large {
+    font-size: @font-size-large;
+}
+ 
+.font-xlarge {
+    font-size: @font-size-xlarge;
+}
+ 
+// --> weights
+.font-w-light {
+    font-weight: @font-weight-light;
+}
+ 
+.font-w-normal {
+    font-weight: @font-weight-normal;
+}
+ 
+.font-w-medium {
+    font-weight: @font-weight-medium;
+}
+ 
+.font-w-bold {
+    font-weight: @font-weight-bold;
+}
+ 
+.font-w-heavy {
+    font-weight: @font-weight-heavy;
+}
+ 
+/* Text Align */
+/* **************************************** */
+.centered-txt,
+.centered-text {
+    text-align: center;
+}
+ 
+.left-txt,
+.left-text {
+    text-align: left;
+}
+ 
+.right-txt,
+.right-text {
+    text-align: right;
+}
+ 
+/* Form Inputs */
+/* **************************************** */
+// Warning: Form style is not complete (I'm working on it)
+label {
+    color: @label-color;
+    font-weight: @label-weight;
+    margin: @label-margin;
+    padding: @label-padding;
+}
+ 
+input,
+textarea {
+    color: @inp-color;
+    margin: @inp-margin;
+    padding: @inp-padding;
+    border: @inp-border;
+    border-radius: @inp-radius;
+}
+ 
+/* Responsive/Fluid Images */
+/* **************************************** */
+.img-fluid img, img.img-fluid, 
+.img-100 img, img.img-100  {
+    width: 100%;
+}
+ 
+ 
