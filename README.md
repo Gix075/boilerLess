@@ -27,3 +27,20 @@ This file must be the main html page of your project. Here you need to include t
 
 ### From {less} to CSS
 For a correct use of **boilerLess** you need to compile {less} files in common CSS files. There are many way to do this task such as a Grunt contrib or simply using a modern editor like Brakets. For this reason inside the boiler{LESS} package there are no tool for less compile. 
+
+
+***
+
+
+### Changes
+
+#### Version 0.7.0 (first stable)
+
+* New mixins added
+* less/boilerLess.less and css/boilerLess.css removed
+* Bootstrap CSS, JS and Fonts removed
+* FontAwesome CSS and Fonts removed
+* HTML5 Boilerplate updated to 5.2.0
+* jQuery updated to 1.11.3
+* Some CSS changes for print mediaquery
+* Apache support updated
