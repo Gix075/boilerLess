@@ -1,9 +1,5 @@
-# boilerLess (version 0.5.0 beta)
+# boilerLess (version 0.7.0)
 Based on HTML5 Boilerplate, **boiler{LESS}** is an elementary LESS boilerplate for easy webproject setup.
-
-## Beta Version
-This tool is at its first beta version.<br>
-I used this tool in many project and i think that it's works well, but if you find some bugs or you have some good ideas to improve it, let open an issue.
 
 ## Basical Style and More
 **boiler{LESS}** provides a common style for all commons html elements such as: html, body, h*, p, a, ul, ol, img, span, small, form, input, select, textarea and much more.<br>
@@ -20,9 +16,7 @@ Install and use **boiler{LESS}** is very simple:
 
 
 ### Default index.html
-This file must be the main html page of your project. Here you need to include the right css or less file.<br>
-As you can read on project wiki, **boilerLess** provides two different way to use it: **all-in-one** file or **singles files** that is the default choise of this tool.<br>
-As you can see on our index.html, we decided to include on this page the compiled css single files:
+This file must be the main html page of your project. Here you need to include the right css or less file.
 
 ```html
 <link rel="stylesheet" href="css/normalize.css">
