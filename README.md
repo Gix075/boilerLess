@@ -44,3 +44,5 @@ For a correct use of **boilerLess** you need to compile {less} files in common C
 * jQuery updated to 1.11.3
 * Some CSS changes for print mediaquery
 * Apache support updated
+
+*This version is the release canditate for version 1.0.0*
