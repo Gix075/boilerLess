@@ -1,4 +1,7 @@
 # boilerLess (version 0.7.0)
+
+**THIS REPOSITORY IN NOT MORE MANTAINED**  Look at the new SASS project [boilerSass](https://github.com/Gix075/boilerSass/)
+
 Based on HTML5 Boilerplate, **boiler{LESS}** is an elementary LESS boilerplate for easy webproject setup.
 
 ## Basical Style and More
